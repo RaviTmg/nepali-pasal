@@ -2,7 +2,7 @@ import { gql } from 'apollo-server-micro';
 
 const typeDefs = gql`
   type Product {
-    id:String!
+    _id:String!
     name: String
     price: String
     description:String
@@ -14,7 +14,7 @@ const typeDefs = gql`
   # clients can execute, along with the return type for each.
   type Query {
     products: [Product]
-    product(id:String): Product
+    product(_id:String): Product
   }
 `;
 
