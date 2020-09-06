@@ -1,4 +1,5 @@
-const { gql } = require('apollo-server');
+import { gql } from 'apollo-server-micro';
+
 const typeDefs = gql`
   type Product {
     id:String!
@@ -16,4 +17,5 @@ const typeDefs = gql`
     product(id:String): Product
   }
 `;
-module.exports = typeDefs
+
+export default typeDefs;

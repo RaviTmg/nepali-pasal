@@ -6,7 +6,7 @@ import ProductList from '../components/ProductList';
 
 export default function Home() {
   const client = new ApolloClient({
-    uri: "http://localhost:4000",
+    uri: "http://localhost:3000/api/graphql",
   });
   return (
     <ApolloProvider client={client} >

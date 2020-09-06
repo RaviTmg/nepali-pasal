@@ -1,6 +1,4 @@
-// const { Product, Manufacturer } = require('./connectors');
-// Resolvers define the technique for fetching the types defined in the
-// schema. This resolver retrieves books from the "books" array above.
+
 const resolvers = {
   Query: {
     products(_parent, _args, _context, _info) {
@@ -22,4 +20,5 @@ const resolvers = {
     }
   },
 };
-module.exports = resolvers
+
+export default resolvers;
